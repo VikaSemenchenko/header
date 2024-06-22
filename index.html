@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container con-header">
+        <a href="/" class="navigation__logo logo-header">
+          <span class="navigation__logo-web logo__web">Web</span
+          ><span class="navigation__logo-studio logo__studio">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="menu">
+            <li class="menu__item">
+              <a href="#" class="menu__link">Студія</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="portfolio.html" class="menu__link">Портфоліо</a>
+            </li>
+
+            <li class="menu__item">
+              <a href="#" class="menu__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="contacts">
+          <li class="contact">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contact-link"
+            >
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li class="contact">
+            <a href="tel:+380961111111" class="contact-link">
+              +380961111111
+            </a>
+          </li>
+        </ul>
+
+        <button class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+   
+          <svg width="30" height="30" class="icon-menu">
+            <use href="./icon/symbol-defs.svg#icon-menu"></use>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <!-- Mobile-menu. -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg width="24" height="24">
+          <use href="./icon/symbol-defs.svg#icon-cross"></use>
+        </svg>
+      </button>
+
+      <div class="mobile-menu">
+        <ul class="mobil-menu-pages">
+          <li class="mobile-menu-page">
+            <a href="#" class="mobile-menu-link">Студія</a>
+          </li>
+
+          <li class="mobile-menu-page">
+            <a href="portfolio.html" class="mobile-menu-link">Портфоліо</a>
+          </li>
+
+          <li class="mobile-menu-page">
+            <a href="#" class="mobile-menu-link">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="mobile-menu-contacts">
+          <li class="mobile-menu-contact">
+            <a href="mailto:info@devstudio.com" class="mobile-contact-link">
+              info@devstudio.com
+            </a>
+          </li>
+
+          <li class="mobile-menu-contact">
+            <a href="tel:+380961111111" class="mobile-contact-link">
+              +380961111111
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script scr="./js/mobile-menu.js"></script>
+  </body>
+</html>
